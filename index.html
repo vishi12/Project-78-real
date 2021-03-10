@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Project 78</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <h3>
+            <image id="family_album" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKNBjAEwveblOoL7WIk0Z6ghQ2
+            tD4XKxt5ZQ&usqp=CAU"></image>
+        </h3>
+        <br>
+        <h4 id="all_names">Vishnutha Singh</h4>
+            <br>
+        <button id="nextbutton" onclick="next_person_and_name()">Next</button>
+        <h4></h4>
+    </body>
+    <script>
+    var images = [
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKNBjAEwveblOoL7WIk0Z6ghQ2tD4XKxt5ZQ&usqp=CAU",
+    "https://i.pinimg.com/originals/04/48/60/044860ebcd5d6c14a1140b351cb620b1.jpg",
+    "https://upload.wikimedia.org/wikipedia/en/a/aa/Bart_Simpson_200px.png",
+    "https://i.pinimg.com/originals/b0/88/e5/b088e5db6b560a33fc20e666a46263b3.jpg",
+];
+var names = [
+      "Vishnutha Singh",
+      "Deepsa Reddy",
+      "Arjun Singh",
+      "Shreya Singh",
+];
+var i = 0;
+function next_person_and_name() {
+  if(i == 4)
+    {
+      i=0;
+    }
+  document.getElementById("family_album").src= images[i];
+  document.getElementById("all_names").innerHTML= names[i];
+   i++;
+  }
+    </script>
+</html>
